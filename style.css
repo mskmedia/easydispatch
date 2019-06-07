@@ -8,6 +8,7 @@
 body {
   background: #333;
   color: white;
+  font-family: "Gugi", cursive;
 }
 
 header {
@@ -108,6 +109,11 @@ li {
   border-top: white 1px solid;
   margin-bottom: 3rem;
   margin-top: 3rem;
+}
+
+/* BOLOs */
+.bolos {
+  border-top: white 1px solid;
 }
 
 /* References */
