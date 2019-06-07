@@ -1,0 +1,95 @@
+/* Global */
+@media (min-width: 468px) {
+  .container-2 {
+    display: flex;
+  }
+}
+
+body {
+  background: #333;
+  color: white;
+}
+
+header {
+  text-align: center;
+}
+
+/* Buttons */
+.container-1 {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  background: black;
+  border: red 5px solid;
+  border-radius: 5px;
+  text-align: center;
+}
+
+button {
+  padding: 1rem;
+  background-color: #333;
+  border: white 1px solid;
+  margin-top: 1rem;
+  color: white;
+}
+
+button#pc {
+  color: green;
+}
+
+button#s1h {
+  color: yellow;
+}
+
+button#pb {
+  color: red;
+}
+
+/* Flex */
+.container-2 {
+  display: flex;
+}
+
+.container-2 div {
+  /* border: 1px #ccc solid; */
+}
+
+.container-3 {
+  display: flex;
+  border-top: white 1px solid;
+  padding: 3rem;
+}
+
+.container-3 .box-1 {
+  border: white 1px solid;
+}
+
+.box-1 {
+  flex: 1;
+}
+
+.box-2 {
+  flex: 1;
+}
+
+.box-3 {
+  flex: 1;
+}
+
+.box-4 {
+  flex: 1;
+}
+
+/* Lists */
+li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+/* Events */
+#newEvent {
+  display: none;
+  border-top: white 1px solid;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
