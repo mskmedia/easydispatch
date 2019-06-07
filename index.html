@@ -29,7 +29,7 @@
       <div class="container-2">
         <!-- Police -->
         <div class="box-1">
-          <h1>Police Units</h1>
+          <h1 class="darkblue">Police Units</h1>
           <ul>
             <li><input type="text" name="Unit" /></li>
             <li><input type="text" name="Unit" /></li>
@@ -45,7 +45,7 @@
         </div>
 
         <div class="box-2">
-          <h1>Status</h1>
+          <h1 class="red">Status</h1>
           <ul>
             <li><input type="text" name="Unit" /></li>
             <li><input type="text" name="Unit" /></li>
@@ -62,7 +62,7 @@
 
         <!-- Fire -->
         <div class="box-3">
-          <h1>Fire Units</h1>
+          <h1 class="flame">Fire Units</h1>
           <ul>
             <li><input type="text" name="Unit" /></li>
             <li><input type="text" name="Unit" /></li>
@@ -77,7 +77,7 @@
           </ul>
         </div>
         <div class="box-4">
-          <h1>Status</h1>
+          <h1 class="red">Status</h1>
           <ul>
             <li><input type="text" name="Unit" /></li>
             <li><input type="text" name="Unit" /></li>
@@ -96,31 +96,84 @@
       <!-- Calls and Events -->
       <div class="container-3">
         <div class="box-1">
-          <h1>Events</h1>
+          <h1 class="gold">Events</h1>
           <button onclick="newEvent()">New Event</button>
+          <button onclick="seeEvent()">See Event(s)</button>
 
           <div id="newEvent">
-            <h1>New Event</h1>
-            <h2>Units</h2>
+            <h1 class="darkblue">New Event</h1>
+            <h2 class="red">Units</h2>
             <textarea name="Units" id="" cols="30" rows="10">
 Type the callsigns of the units attached to this event...</textarea
             >
-            <h2>Description</h2>
+            <h2 class="red">Description</h2>
             <textarea name="Description" id="" cols="30" rows="10">
 Type a short description of the event...</textarea
             >
-            <h2>Log</h2>
+            <h2 class="red">Log</h2>
             <textarea name="Log" id="" cols="30" rows="10">
 Type a log of events...</textarea
             >
           </div>
         </div>
         <div class="box-2">
-          <h1>Notes</h1>
+          <h1 class="gold">Notes</h1>
           <textarea name="Notes" cols="30" rows="10"></textarea>
+          <div id="seeEvent">
+            <h1 class="darkblue">Event(s)</h1>
+          </div>
         </div>
       </div>
+
+      <div class="ref">
+        <h1 class="gold">References</h1>
+        <button>
+          <a
+            target="_blank"
+            href="https://docs.google.com/document/d/1yrSA9W1VXGkG5KzShDckjD3V25loVSZ3sSd32oiDoAc/edit"
+            >Code List</a
+          >
+        </button>
+        <button>
+          <a
+            target="_blank"
+            href="https://sites.google.com/view/udfr-official/cad/police-cad-login"
+            >Police CAD Login</a
+          >
+        </button>
+        <button>
+          <a
+            target="_blank"
+            href="https://docs.google.com/document/d/1s2DBy3keKnHe_WnINzXaMbOwRSn0I9sQ_j69CGPxVFc/edit"
+            >Phonetic Alphabet</a
+          >
+        </button>
+        <button>
+          <a
+            target="_blank"
+            href="https://docs.google.com/document/d/1-agD46zRrX7Y2hKbWriXD7X-EsNw3je26nuibsVna90/edit"
+            >Resouces Handbook</a
+          >
+        </button>
+      </div>
+
+      <div class="supervisors">
+        <h1 class="darkblue">Police Supervisors</h1>
+        <h2 class="red">SoonTM</h2>
+      </div>
+
+      <div class="info">
+        <h1 class="gold">Information</h1>
+        <h2 class="red">SoonTM</h2>
+      </div>
     </div>
+
+    <footer>
+      Copyright &copy 2019 Nathan11#1777<br /><a
+        href="https://mskmedia.github.io"
+        >Father Website</a
+      >
+    </footer>
   </body>
   <script>
     // Buttons
@@ -165,6 +218,34 @@ Type a log of events...</textarea
     // Events
     function newEvent() {
       var x = document.getElementById("newEvent");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function seeEvent() {
+      var x = document.getElementById("seeEvent");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    // References
+    function codeList() {
+      var x = document.getElementById("codeList");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function cad() {
+      var x = document.getElementById("cad");
       if (x.style.display === "none") {
         x.style.display = "block";
       } else {

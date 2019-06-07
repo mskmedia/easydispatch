@@ -14,6 +14,11 @@ header {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /* Buttons */
 .container-1 {
   width: 80%;
@@ -31,6 +36,7 @@ button {
   border: white 1px solid;
   margin-top: 1rem;
   color: white;
+  border-radius: 15px;
 }
 
 button#pc {
@@ -61,7 +67,15 @@ button#pb {
 }
 
 .container-3 .box-1 {
-  border: white 1px solid;
+  border: #ccc 5px solid;
+  margin-right: 1.5rem;
+  border-radius: 1rem;
+}
+
+.container-3 .box-2 {
+  border: #ccc 5px solid;
+  margin-left: 1.5rem;
+  border-radius: 1rem;
 }
 
 .box-1 {
@@ -87,9 +101,66 @@ li {
 }
 
 /* Events */
-#newEvent {
+#newEvent,
+#seeEvent {
   display: none;
   border-top: white 1px solid;
   margin-bottom: 3rem;
   margin-top: 3rem;
+}
+
+/* References */
+#codeList,
+#cad {
+  display: none;
+}
+
+.ref {
+  margin-bottom: 3rem;
+  border-top: white 1px solid;
+}
+
+/* Supervisors */
+.supervisors {
+  border-top: white 1px solid;
+}
+
+/* Information */
+.info {
+  border-top: white 1px solid;
+}
+
+/* Colors */
+.gold {
+  color: #ffd700;
+}
+
+.red {
+  color: #8b0000;
+}
+
+.flame {
+  color: #e25822;
+}
+
+.darkblue {
+  color: #003366;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 1rem;
+  border-top: black 1rem solid;
+  padding: 3rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffd700;
 }
