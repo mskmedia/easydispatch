@@ -127,7 +127,7 @@ Type a log of events...</textarea
 
       <div class="ref">
         <h1 class="gold">References</h1>
-        <button>
+        <!-- <button>
           <a
             target="_blank"
             href="https://docs.google.com/document/d/1yrSA9W1VXGkG5KzShDckjD3V25loVSZ3sSd32oiDoAc/edit"
@@ -154,7 +154,17 @@ Type a log of events...</textarea
             href="https://docs.google.com/document/d/1-agD46zRrX7Y2hKbWriXD7X-EsNw3je26nuibsVna90/edit"
             >Resouces Handbook</a
           >
-        </button>
+        </button> -->
+        <button onclick="policeDatabase()">Police Database</button>
+        <div id="policeDatabase">
+          <iframe
+            src="https://docs.google.com/spreadsheets/d/1yrl2R_1A0rGf-Vc3qK0yuwMQERqesRdgjZROgeGm_gA/edit#gid=0"
+            width="100%"
+            height="4000"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
       </div>
 
       <div class="supervisors">
@@ -246,6 +256,15 @@ Type a log of events...</textarea
 
     function cad() {
       var x = document.getElementById("cad");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function policeDatabase() {
+      var x = document.getElementById("policeDatabase");
       if (x.style.display === "none") {
         x.style.display = "block";
       } else {

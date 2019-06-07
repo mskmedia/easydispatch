@@ -76,6 +76,7 @@ button#pb {
   border: #ccc 5px solid;
   margin-left: 1.5rem;
   border-radius: 1rem;
+  padding-bottom: 1rem;
 }
 
 .box-1 {
@@ -111,7 +112,8 @@ li {
 
 /* References */
 #codeList,
-#cad {
+#cad,
+#policeDatabase {
   display: none;
 }
 
