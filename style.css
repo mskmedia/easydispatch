@@ -113,7 +113,13 @@ li {
 /* References */
 #codeList,
 #cad,
-#policeDatabase {
+#policeDatabase,
+#policeDatabaseVRL,
+#policeDatabaseIRL,
+#policeDatabaseCRL,
+#policeDatabaseCR,
+#policeDatabaseAR,
+#policeDatabaseWWR {
   display: none;
 }
 

@@ -127,7 +127,7 @@ Type a log of events...</textarea
 
       <div class="ref">
         <h1 class="gold">References</h1>
-        <!-- <button>
+        <button>
           <a
             target="_blank"
             href="https://docs.google.com/document/d/1yrSA9W1VXGkG5KzShDckjD3V25loVSZ3sSd32oiDoAc/edit"
@@ -154,11 +154,83 @@ Type a log of events...</textarea
             href="https://docs.google.com/document/d/1-agD46zRrX7Y2hKbWriXD7X-EsNw3je26nuibsVna90/edit"
             >Resouces Handbook</a
           >
-        </button> -->
-        <button onclick="policeDatabase()">Police Database</button>
+        </button>
+        <button class="red" onclick="policeDatabase()">Police Database</button>
         <div id="policeDatabase">
           <iframe
             src="https://docs.google.com/spreadsheets/d/1yrl2R_1A0rGf-Vc3qK0yuwMQERqesRdgjZROgeGm_gA/edit#gid=0"
+            width="100%"
+            height="4000"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+        <button class="gold" onclick="policeDatabaseVRL()">
+          Vehicle Registartion Lookup
+        </button>
+        <div id="policeDatabaseVRL">
+          <iframe
+            src="https://docs.google.com/spreadsheets/d/1yrl2R_1A0rGf-Vc3qK0yuwMQERqesRdgjZROgeGm_gA/edit#gid=1158213917"
+            width="100%"
+            height="4000"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+        <button class="gold" onclick="policeDatabaseIRL()">
+          ID Registartion Lookup
+        </button>
+        <div id="policeDatabaseIRL">
+          <iframe
+            src="https://docs.google.com/spreadsheets/d/1yrl2R_1A0rGf-Vc3qK0yuwMQERqesRdgjZROgeGm_gA/edit#gid=504677288"
+            width="100%"
+            height="4000"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+        <button class="gold" onclick="policeDatabaseCRL()">
+          Company Registartion Lookup
+        </button>
+        <div id="policeDatabaseCRL">
+          <iframe
+            src="https://docs.google.com/spreadsheets/d/1yrl2R_1A0rGf-Vc3qK0yuwMQERqesRdgjZROgeGm_gA/edit#gid=1478640763"
+            width="100%"
+            height="4000"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+        <button class="gold" onclick="policeDatabaseCR()">
+          Citation Reports
+        </button>
+        <div id="policeDatabaseCR">
+          <iframe
+            src="https://docs.google.com/spreadsheets/d/1yrl2R_1A0rGf-Vc3qK0yuwMQERqesRdgjZROgeGm_gA/edit#gid=975194018"
+            width="100%"
+            height="4000"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+        <button class="gold" onclick="policeDatabaseAR()">
+          Arrest Reports
+        </button>
+        <div id="policeDatabaseAR">
+          <iframe
+            src="https://docs.google.com/spreadsheets/d/1yrl2R_1A0rGf-Vc3qK0yuwMQERqesRdgjZROgeGm_gA/edit#gid=911554642"
+            width="100%"
+            height="4000"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+        <button class="gold" onclick="policeDatabaseWWR()">
+          Written Warning Reports
+        </button>
+        <div id="policeDatabaseWWR">
+          <iframe
+            src="https://docs.google.com/spreadsheets/d/1yrl2R_1A0rGf-Vc3qK0yuwMQERqesRdgjZROgeGm_gA/edit#gid=1553342431"
             width="100%"
             height="4000"
             frameborder="0"
@@ -263,8 +335,53 @@ Type a log of events...</textarea
       }
     }
 
-    function policeDatabase() {
-      var x = document.getElementById("policeDatabase");
+    function policeDatabaseVRL() {
+      var x = document.getElementById("policeDatabaseVRL");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function policeDatabaseIRL() {
+      var x = document.getElementById("policeDatabaseIRL");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function policeDatabaseCRL() {
+      var x = document.getElementById("policeDatabaseCRL");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function policeDatabaseCR() {
+      var x = document.getElementById("policeDatabaseCR");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function policeDatabaseAR() {
+      var x = document.getElementById("policeDatabaseAR");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function policeDatabaseWWR() {
+      var x = document.getElementById("policeDatabaseWWR");
       if (x.style.display === "none") {
         x.style.display = "block";
       } else {
